@@ -15,6 +15,8 @@ namespace MoodAnalyzerProblem
             Console.WriteLine(moodanalyserobj.AnalyseMood());
             MoodAnalyser moodanalyserobj2 = new MoodAnalyser("I am in Happy mood");
             Console.WriteLine(moodanalyserobj2.AnalyseMood());
+            MoodAnalyser moodanalyserobj3 = new MoodAnalyser("null mood");
+            Console.WriteLine(moodanalyserobj3.AnalyseMood());
             Console.ReadKey();
         }
     }
