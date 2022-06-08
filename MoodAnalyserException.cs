@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace MoodAnalyzerProblem
 {
-    internal class MoodAnalyserCustomException : Exception
+    public class MoodAnalyserCustomException : Exception
     {
         public enum ExceptionType
         {
-            Null_Message,Empty_Message
+            Null_Message,Empty_Message,NO_SUCH_CLASS,NO_SUCH_METHOD
         }
         //creating variable Type of ExceptionType
-        private readonly ExceptionType type;
+          ExceptionType type;
 
         public MoodAnalyserCustomException(ExceptionType Type,string message) : base(message)
         {
@@ -33,7 +33,7 @@ namespace MoodAnalyzerProblem
                     return "SAD";
 
                 }
-                else
+                else 
                 {
                     return "HAPPY";
                 }
